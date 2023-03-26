@@ -1,4 +1,7 @@
-## 0x11. C - printf
+## 0x11. C - printf (Team Project)
+## Team members:
+* Oke Adenike Abosede
+* Afebu Balogun
 
 ## This project:
 
@@ -80,9 +83,9 @@ Handle the following conversion specifier: p.
 
 ## Task 7: The big print gives and the small print takes away
 Handle the following flag characters for non-custom conversion specifiers:
-* +
+* '+'
 * space
-* #
+* '#'
 
 ## Task 8: Sarcasm is lost in print
 Handle the following length modifiers for non-custom conversion specifiers:
