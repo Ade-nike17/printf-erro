@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stddef.h>
 #include "main.h"
 
 /**
@@ -71,9 +72,9 @@ int _printf(const char *format, ...)
 			}
 			else if (format[i + 1] == 's')
 			{
-				char s = va_arg(args, char);
+				char *s = va_arg(args, char *);
 
-				write_strings(s, &num);
+				write_string(s, &num);
 				i++;
 			}
 			else if (format[i + 1] == '%')
