@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	/* printers array of type printer_t containing format specifiers */
-	printer_t printers[] = {{"s", print_string}, {"c", print_char}, {NULL, NULL}};
+	printer_t printers[] = {{"s", print_string}, {"c", print_char}, {"d", print_int}, {"i", print_int}, {NULL, NULL}};
 
 	if (format == NULL)
 		return (-1);

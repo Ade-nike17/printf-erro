@@ -45,3 +45,38 @@ int print_char(va_list args)
 
 	return (1);
 }
+
+/**
+ * print_int - prints an integer
+ * @args: list of arguments
+ *
+ * Return: number of characters printed
+ */
+int print_int(va_list args)
+{
+	int n, count;
+	int rev_digits[100];
+
+	n = va_arg(args, int);
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+
+	count = 0;
+
+	do
+	{
+		rev_digits[count++] = n % 10;
+		n = n / 10;
+	} while (n > 0);
+
+	while (--count >= 0)
+	{
+		_putchar('0' + rev_digits[count]);
+	}
+
+	return (n);
+}
