@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include "main.h"
 
-/** 
+/**
  * print_string - writes a null terminated string to the output stream
  * @args: list of arguments
  *
